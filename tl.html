@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trans Liberation Resource Network</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Include necessary CSS styles for DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <!-- Bootstrap Navigation Tabs -->
+        <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#resources">Find <br> Resources</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#hiv-aids">HIV/AIDS <br> Resources</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#add-resource">Add Your <br> Resource</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#about">About <br> This Page</a></li>
+        </ul>
+
+        <!-- Bootstrap Tab Content -->
+        <div class="tab-content mt-3">
+            <div id="resources" class="tab-pane fade show active">
+                <!-- Embedded Shiny App -->
+                <iframe src="https://translibrn.shinyapps.io/tl_work/" width="100%" height="600px"></iframe>
+            </div>
+
+            <div id="hiv-aids" class="tab-pane fade">
+                <!-- Content for HIV/AIDS Resources tab -->
+                <!-- Add your content here -->
+            </div>
+
+            <div id="add-resource" class="tab-pane fade">
+                <!-- Button to open modal with Google Form -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#googleFormModal">
+                    Open Google Form
+                </button>
+            </div>
+
+            <div id="about" class="tab-pane fade">
+                <!-- Content for About This Page tab -->
+                <!-- Add your content here -->
+            </div>
+        </div>
+
+        <!-- Modal with Google Form -->
+        <div class="modal fade" id="googleFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Google Form Embedded in modal -->
+                        <iframe src="https://docs.google.com/forms/d/1Aw3nmaY9RkDr8BWBSmFk26kqSs6yoFAekv7qOSaAYsk/viewform?embedded=true"
+                            width="100%" height="600px"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include necessary JS libraries for DataTables -->
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
+
+    <!-- Initialize Bootstrap tabs -->
+    <script>
+        $(document).ready(function () {
+            $('#myTabs a').on('click', function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        });
+    </script>
+</body>
+
+</html>

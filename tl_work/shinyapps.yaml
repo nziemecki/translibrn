@@ -1,0 +1,4 @@
+name: Trans Liberation Resource Network
+file: app.R
+dependencies:
+  - "C:/Users/Nathan.Ziemecki/Desktop/tl_work/translibrn-689f336d1a73.json"

@@ -1,0 +1,16 @@
+Package: tl_work
+Type: Shiny
+Title: Trans Liberation Resource Network
+Version: 0.1.0
+Description: Shiny app for Trans Liberation Resource Network
+Author: Nat Ziemecki
+Maintainer: Your Email <translibrn@gmail.com>
+  License: NA
+Encoding: UTF-8
+Suggests:
+  googledrive,
+  googlesheets4,
+  shiny,
+  shinydashboard,
+  DT,
+  shinythemes

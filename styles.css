@@ -1,0 +1,82 @@
+/* styles.css */
+
+
+:root {
+    --white: #ffffffff;
+    --antique-white: #ffe8d1ff;
+    --air-force-blue: #568ea3ff;
+    --sky-blue: #68c3d4ff;
+    --raw-umber: #826251ff;
+}
+
+/* styles.css */
+
+/* Custom styles for the tabs */
+.nav-tabs .nav-item {
+    flex: 1; /* Distribute the available space equally among tabs */
+    text-align: center; /* Center-align text within tabs */
+    padding: 0.5rem; /* Padding similar to p-2 */
+    display: flex;
+    align-items: stretch; /* Align items to stretch vertically */
+}
+
+.nav-tabs .nav-item .nav-link {
+    width: 100%; /* Make each tab take up the full width */
+    background-color: var(--air-force-blue); /* Tab background color */
+    color: var(--white); /* Tab text color */
+    border: 1px solid var(--air-force-blue); /* Tab border color */
+    border-radius: 0; /* Remove border-radius for a more squared appearance */
+}
+
+/* Active tab style */
+.nav-tabs .nav-item .nav-link.active {
+    background-color: var(--sky-blue); /* Active tab background color */
+    border-color: var(--sky-blue); /* Active tab border color */
+}
+
+/* Active tab style */
+.nav-tabs .nav-item .nav-link.active {
+    background-color: var(--sky-blue); /* Active tab background color */
+    border-color: var(--sky-blue); /* Active tab border color */
+}
+
+/* Customize the content container background */
+.tab-content {
+    background-color: var(--antique-white); /* Content container background color */ 
+    height: 100%;
+    padding: 20px; /* Add padding for better readability */
+}
+
+/* Style for modal header and body */
+.modal-content {
+    background-color: var(--white); /* Modal content background color */
+}
+
+/* Customize the form button in the modal */
+.modal-content button {
+    background-color: var(--air-force-blue); /* Button background color */
+    color: var(--white); /* Button text color */
+}
+
+/* Responsive margin for the top container */
+.container {
+    margin-top: 20px; /* Add space at the top on larger screens */
+}
+
+/* Add a subtle box shadow to the tabs */
+.nav-tabs {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a hover effect to the tabs */
+.nav-tabs .nav-item .nav-link:hover {
+    background-color: var(--sky-blue); /* Hover background color */
+}
+
+/* Style for the footer */
+.footer {
+    background-color: var(--air-force-blue); /* Footer background color */
+    color: var(--white); /* Footer text color */
+    padding: 10px 0; /* Add padding to the footer */
+    text-align: center; /* Center-align text in the footer */
+}

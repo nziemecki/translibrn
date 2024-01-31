@@ -1,0 +1,10 @@
+name: tl_work
+title:
+username: translibrn
+account: translibrn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10938247
+bundleId: 8203339
+url: https://translibrn.shinyapps.io/tl_work/
+version: 1

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable Table App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <form class="form-inline mb-4">
+            <div class="form-group">
+                <label for="search">Search:</label>
+                <input type="text" class="form-control mx-sm-3" id="search" name="search" value="{{ search_query }}">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        {% if table %}
+            {{ table | safe }}
+        {% else %}
+            <p>No matching results.</p>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
